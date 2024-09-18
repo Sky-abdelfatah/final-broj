@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------header-------------------------*/
+.header {
+  overflow: hidden;
+  background-color: rgb(168, 168, 241);
+  padding: 20px 10px;
+  border-radius: 40px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.header a:hover {
+  background-color: #faecf9;
+  color: black;
+}
+.header a.active {
+  background-color: rgb(106, 47, 170);
+  color: white;
+}
+.header-right {
+  float: right;
+}
+
+/*-------------------------about-------------------------*/
+
+#about {
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgb(219, 214, 214);
+  margin: 1rem 0;
+  border-radius: 50px;
+  box-shadow: #8594e6 4px 5px 5px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+img:hover {
+  transform: scaleX(-1);
+}
+#portfolio {
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid rgb(219, 214, 214);
+  display: flex;
+  border-radius: 50px;
+  box-shadow: #8594e6 4px 5px 5px;
+  justify-content: space-around;
+}
+
+#contact {
+  padding: 2rem;
+  text-align: center;
+
+  border: 1px solid rgb(219, 214, 214);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  margin: 1rem 0;
+  border-radius: 50px;
+  box-shadow: #8594e6 4px 5px 5px;
+}
+
+.project {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/*-------------------------footer-------------------------*/
+#foot {
+  background-color: rgb(168, 168, 241);
+  grid-area: ft;
+  padding: 2%;
+  border-radius: 40px;
+  .pay {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
